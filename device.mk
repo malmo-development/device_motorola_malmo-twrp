@@ -26,12 +26,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # define hardware platform
-PRODUCT_PLATFORM := holi
+PRODUCT_PLATFORM := blair
 
 # A/B support
 AB_OTA_UPDATER := true
 
-LOCAL_PATH := device/motorola/bangkk
+LOCAL_PATH := device/motorola/malmo
 
 # A/B
 AB_OTA_PARTITIONS += \

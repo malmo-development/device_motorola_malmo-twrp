@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.motorola_holi",
+    name: "libgptutils.motorola_blair",
     vendor: true,
     recovery_available: true,
     shared_libs: [

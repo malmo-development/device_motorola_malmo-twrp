@@ -4,18 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/bangkk
+DEVICE_PATH := device/motorola/malmo
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := holi
+TARGET_BOOTLOADER_BOARD_NAME := malmo
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
-QCOM_BOARD_PLATFORMS += holi
-TARGET_BOARD_PLATFORM := holi
+QCOM_BOARD_PLATFORMS += blair
+TARGET_BOARD_PLATFORM := blair
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
 TARGET_USES_64_BIT_BINDER := true
 TARGET_SUPPORTS_64_BIT_APPS := true
@@ -55,7 +55,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
                         msm_rtb.filter=0x237 \
                         service_locator.enable=1 \
                         androidboot.hab.csv=0 \
-                        androidboot.hab.product=bangkk \
+                        androidboot.hab.product=malmo \
                         androidboot.hab.cid=50 \
                         firmware_class.path=/vendor/firmware_mnt/image \
 # For the love of all that is holy, please do not include this in your ROM unless you really want TWRP to not work correctly!
@@ -76,8 +76,8 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 #BOARD_KERNEL_SEPARATED_DTBO := true
 #BOARD_INCLUDE_RECOVERY_DTBO := true
-#TARGET_KERNEL_SOURCE := kernel/motorola/bangkk
-#TARGET_KERNEL_CONFIG := vendor/bangkk_defconfig
+#TARGET_KERNEL_SOURCE := kernel/motorola/malmo
+#TARGET_KERNEL_CONFIG := vendor/malmo_defconfig
 
 BOARD_KERNEL_IMAGE_NAME := kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
@@ -104,7 +104,7 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 246543265792
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := bangkk, bangkk_retcn
+TARGET_OTA_ASSERT_DEVICE := malmo
 
 # Dynamic Partition && Super
 BOARD_SUPER_PARTITION_SIZE := 6710886400
